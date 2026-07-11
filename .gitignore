@@ -6,3 +6,5 @@
 crash.log
 response.json
 *.zip
+__pycache__/
+*.pyc
