@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rimi — Cloud Resume</title>
+  <title>Rezwana Ashrafi — Cloud Resume</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p class="tagline">Cloud / DevOps — AWS Certified Solutions Architect</p>
+    <h1>Rezwana Ashrafi</h1>
+    <p class="tagline">Cloud / DevOps Engineer — AWS Certified Solutions Architect (SAA-C03)</p>
+    <p class="links">
+      <a href="https://github.com/Rezwanaasharfi">GitHub</a> ·
+      <a href="LINKEDIN_URL_HERE">LinkedIn</a> ·
+      <span>Greater Vancouver, BC</span>
+    </p>
   </header>
 
   <main>
     <section>
       <h2>About</h2>
-      <p>Short intro goes here.</p>
+      <p>
+        Computer Science graduate and former Lead QA Engineer (2 years) transitioning into
+        cloud and DevOps. I bring a strong foundation in quality, testing, and release
+        processes, now paired with hands-on AWS infrastructure skills — building, automating,
+        and deploying real systems with infrastructure as code.
+      </p>
     </section>
 
     <section>
@@ -26,9 +36,41 @@
     </section>
 
     <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Cloud:</strong> AWS (EC2, S3, VPC, RDS, Lambda, DynamoDB, API Gateway, IAM, CloudWatch, ECS)</li>
+        <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
+        <li><strong>CI/CD:</strong> GitHub Actions, OIDC federation</li>
+        <li><strong>Containers:</strong> Docker, ECS Fargate, ECR</li>
+        <li><strong>Languages / Tools:</strong> Python, Bash, Git, Grafana, Prometheus</li>
+        <li><strong>Foundations:</strong> QA automation, test strategy, release management</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Projects</h2>
       <ul>
-        <li>Cloud Resume — serverless site on AWS, infrastructure in Terraform</li>
+        <li>
+          <strong>Cloud Resume (this site)</strong> — Serverless resume with a live visitor
+          counter. S3/Amplify frontend, API Gateway → Lambda (Python) → DynamoDB backend,
+          fully defined in Terraform.
+          <a href="https://github.com/Rezwanaasharfi/cloud-resume-terraform">Repo</a>
+        </li>
+        <li>
+          <strong>CI/CD Pipeline</strong> — Containerized Flask app deployed to ECS Fargate
+          via GitHub Actions with OIDC-federated IAM (no long-lived keys), building to ECR.
+          <a href="https://github.com/Rezwanaasharfi/ci-cd-pipeline-demo">Repo</a>
+        </li>
+        <li>
+          <strong>3-Tier Highly Available Web App</strong> — Custom VPC across two AZs, ALB +
+          Auto Scaling Group, RDS MySQL Multi-AZ, layered security groups, with a self-healing demo.
+          <a href="https://github.com/Rezwanaasharfi/aws-3tier-ha-webapp">Repo</a>
+        </li>
+        <li>
+          <strong>Monitoring Stack</strong> — EC2-based observability with CloudWatch Agent,
+          Prometheus + node_exporter, and Grafana dashboards across dual data sources.
+          <a href="https://github.com/Rezwanaasharfi/cloud-monitoring-stack">Repo</a>
+        </li>
       </ul>
     </section>
   </main>
